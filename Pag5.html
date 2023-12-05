@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Equivalency   
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20101025
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Acessibilidade na Web</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+	body {
+		font-size: 16px;
+	}
+
+	#increaseFontBtn {
+		cursor: pointer;
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		document.getElementById('increaseFontBtn').addEventListener('click', function() {
+			// Obtém o tamanho atual da fonte
+			var currentSize = window.getComputedStyle(document.body).fontSize;
+
+			// Remove "px" da string e converte para número
+			currentSize = parseFloat(currentSize);
+
+			// Aumenta o tamanho da fonte
+			var newSize = currentSize * 1.2;
+
+			// Define o novo tamanho da fonte para o corpo da página
+			document.body.style.fontSize = newSize + 'px';
+		});
+	});
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">G4 em quatro minutos</a></h1>
+			<p> Produzido por Gabriel </p>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="file:///C:/Users/User/Desktop/Layout%2001/index.html">Home</a></li>
+				<li><a href="file:///C:/Users/User/Desktop/Layout%2001/Pag2.html">Softwere de tela</a></li>
+				<li><a href="file:///C:/Users/User/Desktop/Layout%2001/Pag3.html">Ampliadores de tela</a></li>
+				<li><a href="file:///C:/Users/User/Desktop/Layout%2001/Pag4.html">App acessiveis</a></li>
+				<li><a href="file:///C:/Users/User/Desktop/Layout%2001/Pag5.html">Dicas para os sites</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+					<div class="post">
+						<h2 class="title"><a href="#">Dicas para os sites</a></h2>
+						<p class="meta">Produzido por<a href="#">Gabriel</a>  5 do 12 , 2023
+						<div class="entry">
+							<p><img src="images/img15.jpg" width="538" height="200" alt="" /></p>
+                            <p>Para os criadores de sites empenhados em tornar suas plataformas mais acessíveis, é crucial adotar práticas de design inclusivas. Isso inclui garantir que o site seja compatível com tecnologias assistivas, como leitores de tela, oferecendo descrições adequadas para imagens e garantindo que a navegação seja intuitiva e fácil de ser realizada através de teclado. Além disso, é fundamental considerar o contraste de cores para garantir a legibilidade para pessoas com baixa visão e fornecer legendas em vídeos para beneficiar usuários surdos ou com deficiência auditiva. Ao seguir as diretrizes de acessibilidade, como as fornecidas pelo W3C, os criadores de sites podem aprimorar significativamente a experiência do usuário para um público mais amplo.</p>
+                            
+						</div>
+					</div>
+					<div class="post">
+						
+						<div class="entry">
+							<p><img src="images/img16.png" width="538" height="200" alt="" /></p>
+							<p>Recursos online, como as diretrizes de acessibilidade do W3C (World Wide Web Consortium), o Web Content Accessibility Guidelines (WCAG), e ferramentas de verificação de acessibilidade, como o axe Accessibility, podem ser valiosos para os desenvolvedores que buscam orientações detalhadas e verificações automáticas. Comunidades online e fóruns de acessibilidade também oferecem insights valiosos, permitindo que os criadores de sites compartilhem experiências e aprendam com as melhores práticas uns dos outros. Investir tempo e esforço na compreensão e implementação dessas diretrizes não apenas aprimora a acessibilidade, mas também contribui para a construção de uma web mais inclusiva e equitativa para todos os usuários.</p>
+                            </p>
+							
+						</div>
+					</div>
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<div id="search" >
+								<form method="get" action="#">
+									<div>
+										<input type="text" name="s" id="search-text" value="" />
+										<input type="submit" id="search-submit" value="GO" />
+									</div>
+								</form>
+							</div>
+							<div style="clear: both;">&nbsp;</div>
+						</li>
+						 <!-- Seu código existente ... -->
+
+    <button id="increaseFontBtn">Aumentar Fonte</button>
+						<li>
+							<h2>Voce pode gostar</h2>
+						</li>
+						<li>
+							<h2>Videos relacionados</h2>
+							<ul>
+								<li><a href="https://youtu.be/aPknwW8mPAM?si=VvgCy4B39VPgndX-">Como é a visao de um autista</a></li>
+								<li><a href="#">A importancia de ser ascessivel</a></li>
+								<li><a href="#">Aprendendo libras em 5 dias</a></li>
+								<li><a href="#">softweres de tela</a></li>
+								<li><a href="#">A vida de uma pessoa surda</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>Materias relacionadas</h2>
+							<ul>
+								<li><a href="https://www.alura.com.br/artigos/o-que-e-acessibilidade-web">Oque é Acessibilidade na web</a></li>
+								<li><a href="#">Acessibilidade Digital: Desenvolvendo Experiências Inclusivas</a></li>
+								<li><a href="#">Design Universal na Web: Criando Interfaces para Todos</a></li>
+								<li><a href="#">Tecnologias Assistivas: Transformando a Experiência Online</a></li>
+								<li><a href="#">Inclusão Digital: Estratégias e Práticas para Acessibilidade na Web</a></li>
+								
+							</ul>
+						</li>
+						<li>
+							<h2>Orgaos</h2>
+							<ul>
+								<li><a href="https://emag.governoeletronico.gov.br/">Modelo de Acessibilidade em Governo Eletrônico (eMag)</a></li>
+								<li><a href="#">Conselho Nacional para Acessibilidade Digital (CNAD)</a></li>
+								<li><a href="#">Instituto de Tecnologias Inclusivas (ITI)</a></li>
+								<li><a href="#">Agência de Acessibilidade Digital (AAD)</a></li>
+								<li><a href="#">Comitê Nacional para a Promoção da Acessibilidade Online (CNAO)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>desenvolvido por Gabriel , Ana Luiza e Anna Julia</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
